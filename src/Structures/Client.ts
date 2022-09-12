@@ -1,5 +1,6 @@
 import { ApplicationCommandDataResolvable, Client, ClientEvents, Collection } from "discord.js";
 import { botConfig } from "./Config/botConfig";
+import "../WebServer/link.ts"
 import { RegisterCommands } from "./Interfaces/RegisterCommand";
 import { CommandType } from "./Types/CommandType";
 import { SlashCommandType } from "./Types/SlashCommandType";

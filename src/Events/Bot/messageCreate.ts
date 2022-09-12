@@ -18,7 +18,7 @@ export default new Event({
       client.commands.get(client.aliases.get(cmd.toLowerCase()));
     
     if (!command) return
-
+/*
     if (command?.config?.developer && message.author.id !== client.application.owner.id) {
       return message.reply({
         embeds: [
@@ -86,7 +86,7 @@ export default new Event({
         ]
       })
     }
-
+*/
     command.run({ args, client, message })
   },
 });

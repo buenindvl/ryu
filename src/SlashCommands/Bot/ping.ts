@@ -5,6 +5,6 @@ export default new SlashCommandBuilder({
   name: "ping",
   description: "Bot Latency Ping.",
   run({ client, interaction }) {
-    return interaction.reply({ content: "🏓 Pong", embeds: [new EmbedBuilder().setColor("Random").setDescription(`**Bot Latency:** \`${client.ws.ping.toLocaleString()}ms\``)] })
+    return interaction.reply({ content: "tudo certo aqui nos slash" })
   },
 })

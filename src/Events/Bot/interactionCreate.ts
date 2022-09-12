@@ -10,17 +10,9 @@ export default new Event({
       let command = client.slashCommands.get(interaction.commandName) as SlashCommandType
 
       if (!command) {
-        return interaction.reply({
-          embeds: [
-            new EmbedBuilder()
-              .setTitle("⚠️ Error")
-              .setDescription(`\`\`\`The command used was not found.\`\`\``)
-              .setColor("Red")
-          ],
-          ephemeral: true
-        })
+        return;
       }
-
+/*
       if (command?.config?.developer && interaction.user.id !== client.application.owner.id) {
         return interaction.reply({
           embeds: [
@@ -92,7 +84,7 @@ export default new Event({
           ephemeral: true
         })
       }
-
+*/
       command.run({ 
         args: interaction.options as CommandInteractionOptionResolver,
         client,
